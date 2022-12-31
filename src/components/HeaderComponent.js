@@ -1,4 +1,6 @@
 import CirclePattern from '../assets/shared/desktop/bg-pattern-circle.svg'
+import phoneIllustration from '../assets/home/desktop/illustration-phone-mockup.svg'
+import NavBar from './NavBar';
 
 function HeaderComponent() {
   return (
@@ -6,6 +8,20 @@ function HeaderComponent() {
       <div className="app-header">
         <div className='circle-bg-holder'>
           <img src={CirclePattern} className="circle-bg" alt="circle-bg" />
+        </div>
+
+        <div className='app-container'>
+          <NavBar />
+
+          <div className='intro-section'>
+            <div className='intro-text'>
+              <h1>Start building with our APIs for absolutely free.</h1>
+              <p>Have any questions? <a href='#'>Contact Us</a></p>
+            </div>
+            <div>
+              <img src={phoneIllustration} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

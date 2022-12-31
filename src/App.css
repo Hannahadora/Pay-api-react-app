@@ -1,21 +1,5 @@
 .App {
-}
-
-.circle-bg-holder {
-  max-width: 700px;
-  max-height: 700px;
-  width: 100%;
-}
-.circle-bg {
-  position: absolute;
-  right: -200px;
-  top: -250px;
-}
-.app-header {
-  position: relative;
-  overflow: hidden;
-  background-color: #edf3f8;
-  min-height: 100vh;
+  font-size: 14px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

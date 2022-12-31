@@ -1,0 +1,64 @@
+.circle-bg-holder {
+    max-width: 700px;
+    max-height: 700px;
+    width: 100%;
+  }
+  .circle-bg {
+    position: absolute;
+    right: -200px;
+    top: -250px;
+  }
+  .app-header {
+    position: relative;
+    overflow: hidden;
+    background-color: #edf3f8;
+    min-height: 100vh;
+  }
+  
+  .app-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    color: #6c8294;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links > li {
+    margin-right: 40px;
+  }
+  
+  .app-button {
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .pry-btn {
+    background-color: #ba4270;
+  }
+
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .intro-text {
+    width: 50%;
+    font-family: sans-serif;
+    color: #36536b;
+  }
+  .intro-text > h1 {
+    margin-bottom: 32px;
+  }
