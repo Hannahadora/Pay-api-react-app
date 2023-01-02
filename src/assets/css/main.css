@@ -1,64 +1,92 @@
 .circle-bg-holder {
-    max-width: 700px;
-    max-height: 700px;
-    width: 100%;
-  }
-  .circle-bg {
-    position: absolute;
-    right: -200px;
-    top: -250px;
-  }
-  .app-header {
-    position: relative;
-    overflow: hidden;
-    background-color: #edf3f8;
-    min-height: 100vh;
-  }
-  
-  .app-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .nav-links {
-    color: #6c8294;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .nav-links > li {
-    margin-right: 40px;
-  }
-  
-  .app-button {
-    border-radius: 30px;
-    padding: 12px 24px;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
+  max-width: 700px;
+  max-height: 700px;
+  width: 100%;
+}
+.circle-bg {
+  position: absolute;
+  right: -200px;
+  top: -250px;
+}
+.app-header {
+  position: relative;
+  overflow: hidden;
+  background-color: #edf3f8;
+  min-height: 100vh;
+}
 
-  .pry-btn {
-    background-color: #ba4270;
-  }
+.app-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .intro-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.nav-links {
+  color: #6c8294;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  .intro-text {
-    width: 50%;
-    font-family: sans-serif;
-    color: #36536b;
-  }
-  .intro-text > h1 {
-    margin-bottom: 32px;
-  }
+.nav-links > li {
+  margin-right: 40px;
+}
+
+.app-button {
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pry-btn {
+  background-color: #ba4270 !important;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro-text {
+  width: 50%;
+  font-family: sans-serif;
+  color: #36536b;
+}
+.intro-text > h1 {
+  margin-bottom: 32px;
+}
+.intro-input {
+  margin: 20px 0px 6px 0px;
+}
+
+.app-input {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+.app-input:focus {
+  outline: none;
+}
+.input-wrapper {
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 30px;
+  border: none;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+}
+
+.about-intro-section {
+    background: #1b262f;
+}

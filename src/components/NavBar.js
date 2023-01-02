@@ -1,5 +1,5 @@
 import AppLogo from '../assets/shared/desktop/logo.svg'
-import ButtonComponent from './Button';
+import ButtonComponent from './ButtonComponent';
 
 function NavBar() {
   return (

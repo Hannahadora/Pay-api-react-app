@@ -1,6 +1,7 @@
 import CirclePattern from '../assets/shared/desktop/bg-pattern-circle.svg'
 import phoneIllustration from '../assets/home/desktop/illustration-phone-mockup.svg'
 import NavBar from './NavBar';
+import InputComponent from './InputComponent';
 
 function HeaderComponent() {
   return (
@@ -16,6 +17,7 @@ function HeaderComponent() {
           <div className='intro-section'>
             <div className='intro-text'>
               <h1>Start building with our APIs for absolutely free.</h1>
+              <InputComponent className="intro-input" />
               <p>Have any questions? <a href='#'>Contact Us</a></p>
             </div>
             <div>

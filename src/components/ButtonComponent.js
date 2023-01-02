@@ -1,5 +1,5 @@
 
-function ButtonComponent({title}) {
+function ButtonComponent({ title }) {
   return (
     <button className="app-button">
         { title }
