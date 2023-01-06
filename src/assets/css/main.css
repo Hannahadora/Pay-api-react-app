@@ -16,6 +16,9 @@
 }
 
 .app-navbar {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,6 +32,8 @@
   display: flex;
   align-items: center;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .nav-links > li {
@@ -48,20 +53,31 @@
 .pry-btn {
   background-color: #ba4270 !important;
 }
+.sec-btn {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  color: #fff;
+}
 
 .intro-section {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 .intro-text {
   width: 50%;
-  font-family: sans-serif;
   color: #36536b;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .intro-text > h1 {
   margin-bottom: 32px;
+  font-family: serif;
+  text-align: left;
 }
 .intro-input {
   margin: 20px 0px 6px 0px;
@@ -87,6 +103,99 @@
   display: flex;
 }
 
+.menu-icon{
+  display: none;
+}
+.navbar-btn {
+  display: block;
+}
+.nav_list-item {
+  display: block;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  .intro-text {
+    width: 100%;
+    align-items: center;
+  }
+  .intro-text > h1 {
+    text-align: center;
+  }
+  .circle-bg {
+    position: absolute;
+    right: 0px;
+    left: -90px;
+    top: -780px;
+    width: 120%;
+    height: 100%;
+  }
+  .circle-bg-holder {
+    position: absolute;
+    height: 1215px;
+    max-width: none;
+    max-height: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .circle-bg {
+    left: -80px;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  .nav_list-item {
+    display: none;
+  }
+}
+
+
+
+
 .about-intro-section {
-    background: #1b262f;
+  background: #1b262f;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0;
+}
+
+.about-circle {
+  position: absolute;
+  top: -283px;
+  left: -186px;
+}
+.about-intro_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-intro_text {
+  color: #fff;
+  width: 50%;
+}
+.about-intro_text > p {
+  line-height: 2;
+  font-size: 22px;
+  margin-top: 12px;
+}
+.about_partners{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  align-items: center;
+}
+.about_partners_icon {
+  margin-right: 30px;
+  margin-bottom: 40px;
 }

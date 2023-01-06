@@ -4,7 +4,7 @@ function InputComponent() {
   return (
     <div className="input-wrapper">
       <input className="app-input" placeholder="Enter email address" />
-      <ButtonComponent title={'Schedule a demo'} className="pry-btn" />
+      <ButtonComponent title={'Schedule a demo'} pry={'pry-btn'} />
     </div>
   );
 }
