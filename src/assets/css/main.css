@@ -194,6 +194,7 @@
   display: grid;
   grid-template-columns: 30% 30% 30%;
   align-items: center;
+  gap: 30px;
 }
 .about_partners_icon {
   margin-right: 30px;
