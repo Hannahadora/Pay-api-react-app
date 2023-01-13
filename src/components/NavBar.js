@@ -7,10 +7,10 @@ function NavBar() {
     <div className="navbar">
       <div className="app-navbar">
         <ul className="nav-links">
-          <li><img src={AppLogo} /></li>
-          <li className='nav_list-item'>Pricing</li>
-          <li className='nav_list-item'>About</li>
-          <li className='nav_list-item'>Contact</li>
+        <a href='/'><li><img src={AppLogo} /></li></a>
+          <a href='/pricing'><li className='nav_list-item'>Pricing</li></a>
+          <a href='/about'><li className='nav_list-item'>About</li></a>
+          <a href='/'><li className='nav_list-item'>Contact</li></a>
         </ul>
 
         <div className="navbar-btn">

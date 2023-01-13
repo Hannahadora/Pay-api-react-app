@@ -1,15 +1,21 @@
-import HeaderComponent from '../src/components/HeaderComponent'
-import './App.css';
-import './assets/css/style.css'
-import './assets/css/main.css'
-import AboutIntro from './components/AboutIntro';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Home, About, Pricing } from './pages/index'
+import { Suspense } from 'react';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="">
-      <HeaderComponent />
-      <AboutIntro />
-    </div>
+    <Suspense fallback={'Loading...'}>
+      <Layout>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/pricing' element={<Pricing />} />
+          </Routes>
+        </Router>
+      </Layout>
+    </Suspense>
   );
 }
 
