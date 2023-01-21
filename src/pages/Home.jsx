@@ -11,11 +11,11 @@ const Home = () =>{
     <div className="">
       <HeaderComponent />
       <AboutIntro />
-      <div className='app-container'>
-        <div className='section-flex_row text-3xl'>
-          <img src={easyImplementationImg} alt='' />
+      <div className='app-container mt-[32px]'>
+        <div className='section-flex_row text-3xl mr-[200px]'>
+          <img src={easyImplementationImg} alt='easyImplementationImg' />
           <div className=''>
-            <h2>Easy to implement</h2>
+            <h2 className='text-[45px] font-bold mb-[24px]'>Easy to implement</h2>
             <p> Our API comes with just a few lines of code. You'll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
           </div>
         </div>

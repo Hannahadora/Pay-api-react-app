@@ -1,13 +1,4 @@
-.circle-bg-holder {
-  max-width: 700px;
-  max-height: 700px;
-  width: 100%;
-}
-.circle-bg {
-  position: absolute;
-  right: -200px;
-  top: -250px;
-}
+
 .app-header {
   position: relative;
   overflow: hidden;
@@ -36,7 +27,7 @@
   margin: 0px;
 }
 
-.nav-links > li {
+.nav-links > a {
   margin-right: 40px;
 }
 
@@ -168,13 +159,13 @@
   background: #1b262f;
   position: relative;
   overflow: hidden;
-  padding: 0 0;
+  padding: 100px 0;
 }
 
 .about-circle {
   position: absolute;
-  top: -365px;
-  left: -236px;
+  top: -350px;
+  left: -250px;
 }
 .about-intro_flex {
   display: flex;

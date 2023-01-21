@@ -3,12 +3,9 @@ import NavBar from "./NavBar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <div className="app-container">
-        <NavBar />
-      </div>
+    <div className="bg-[#edf3f8]">
+      <NavBar />
       {children}
-      footer
     </div>
   );
 };

@@ -2,7 +2,7 @@ import ButtonComponent from "./ButtonComponent";
 
 function InputComponent() {
   return (
-    <div className="input-wrapper">
+    <div className="input-wrapper shadow">
       <input className="app-input" placeholder="Enter email address" />
       <ButtonComponent title={'Schedule a demo'} pry={'pry-btn'} />
     </div>
