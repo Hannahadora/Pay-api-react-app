@@ -25,6 +25,46 @@ p {
   max-width: 1240px;
   margin: auto;
 }
+.app-button {
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  font-weight: 500;
+}
+
+.pry-btn {
+  background-color: #ba4270 !important;
+}
+.pry-btn:hover {
+  background-color: rgb(186, 66, 112, 0.5) !important;
+}
+.sec-btn {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.sec-btn:hover {
+  background-color: #fff !important;
+  color: #36536b;
+}
+
+.tert-btn {
+  background-color: #edf3f8 !important;
+  border: 1px solid #36536b;
+  color: #36536b;
+}
+
+.tert-btn:hover {
+  background-color: #36536b !important;
+  border: none;
+  color: #edf3f8;
+}
+
 
 @media screen and (max-width: 1300px) {
   .app-container {

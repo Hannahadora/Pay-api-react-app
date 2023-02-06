@@ -1,7 +1,7 @@
 
-function ButtonComponent({ title, pry, sec }) {
+function ButtonComponent({ title, pry, sec, tert }) {
   return (
-    <button className={`app-button ${pry} ${sec}`}>
+    <button className={`app-button ${pry} ${sec} ${tert}`}>
         { title }
     </button>
   );

@@ -30,26 +30,6 @@
   margin-right: 40px;
 }
 
-.app-button {
-  border-radius: 30px;
-  padding: 12px 24px;
-  font-size: 14px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  white-space: nowrap;
-  width: auto;
-}
-
-.pry-btn {
-  background-color: #ba4270 !important;
-}
-.sec-btn {
-  background-color: transparent !important;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
 .intro-section {
   display: flex;
   flex-direction: row;

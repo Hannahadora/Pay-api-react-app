@@ -26,13 +26,13 @@ const FooterComponent = () => {
                 </li>
               </a>
               <a href="/pricing">
-                <li className="lg:mb-0 mb-[24px] text-[#ffffff]">Pricing</li>
+                <li className="lg:mb-0 mb-[24px] lg:text-left text-center text-[#ffffff]">Pricing</li>
               </a>
               <a href="/about">
-                <li className="lg:mb-0 mb-[24px] text-[#ffffff]">About</li>
+                <li className="lg:mb-0 mb-[24px] lg:text-left text-center text-[#ffffff]">About</li>
               </a>
               <a href="/">
-                <li className="lg:mb-0 mb-[24px] text-[#ffffff]">Contact</li>
+                <li className="lg:mb-0 mb-[24px] lg:text-left text-center text-[#ffffff]">Contact</li>
               </a>
             </ul>
 
