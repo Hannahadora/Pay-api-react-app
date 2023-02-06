@@ -8,7 +8,7 @@ function NavBar() {
     <div className="">
 
       <div className='z-[10] absolute right-0 top-0 overflow-hidden w-[700px] h-[700px]'>
-        <div className='absolute right-[-200px] top-[-200px]'>
+        <div className='absolute right-[-200px] lg:top-[-200px] top-[-375px]'>
           <img src={CirclePattern} className="w-full" alt="circle-bg" />
         </div>
       </div>

@@ -12,7 +12,7 @@ function HeaderComponent() {
 
           <div className='intro-section'>
             <div className='intro-text'>
-              <h1 className='text-[80px] font-bold leading-[85px]'>Start building with our APIs for absolutely free.</h1>
+              <h1 className='lg:text-[80px] text-[50px] font-bold lg:leading-[85px]'>Start building with our APIs for absolutely free.</h1>
               <InputComponent className="intro-input" />
               <p className='mt-4 ml-6'>Have any questions? <a className='underline font-semibold' href='#'>Contact Us</a></p>
             </div>
