@@ -10,7 +10,7 @@ const About = () => {
             We empower innovators by delivering access to the financial system
           </h3>
           <div className="flex lg:flex-row flex-col lg:items-start itesm-center justify-between my-[60px]">
-            <h6 className="lg:w-[30%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
+            <h6 className="lg:text-[18px] text-base lg:w-[30%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
               Our Vision
             </h6>
             <p className="lg:text-left text-center">
@@ -22,7 +22,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex lg:flex-row flex-col lg:items-start itesm-center justify-between mt-[40px]">
-            <h6 className="lg:w-[25%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
+            <h6 className="lg:text-[18px] text-base lg:w-[25%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
               Our Business
             </h6>
             <p className="lg:text-left text-center">
@@ -40,7 +40,7 @@ const About = () => {
       <div className="app-container">
         <div className="xl:w-[75%] lg:w-[80%] w-[100%] mx-auto">
           <div className="flex lg:flex-row flex-col lg:items-start itesm-center justify-between my-[60px]">
-            <h6 className="lg:w-[28%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
+            <h6 className="lg:text-[18px] text-base lg:w-[28%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
               The Culture
             </h6>
             <p className="lg:text-left text-center">
@@ -52,7 +52,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex lg:flex-row flex-col lg:items-start itesm-center justify-between mt-[40px]">
-            <h6 className="lg:w-[15%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
+            <h6 className="lg:text-[18px] text-base lg:w-[15%] w-[100%] lg:text-left text-center font-semibold font-[30px]">
               The People
             </h6>
             <p className="lg:text-left text-center">
