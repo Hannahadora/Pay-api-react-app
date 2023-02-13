@@ -245,3 +245,11 @@
     width: 100%;
   }
 }
+
+/* Contact page */
+.contact-input {
+  background-color: transparent;
+  padding: 4px 12px;
+  border-bottom: 1px solid #36536b;
+  margin-bottom: 24px;
+}

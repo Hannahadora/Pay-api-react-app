@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, About, Pricing } from './pages/index'
+import { Home, About, Pricing, Contact } from './pages/index'
 import { Suspense } from 'react';
 import Layout from './components/Layout';
 
@@ -12,6 +12,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/pricing' element={<Pricing />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </Router>
       </Layout>
