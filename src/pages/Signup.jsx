@@ -7,7 +7,7 @@ const Signup = () => {
 
   return (
     <div className="app-container">
-      <div className="w-[60%] mx-auto my-[70px]">
+      <div className="lg:w-[60%] mx-auto lg:my-[70px] my-[50px]">
         <h3 className="text-center font-medium text-[30px]">Sign In Here</h3>
 
         <div className="mt-[40px]">
