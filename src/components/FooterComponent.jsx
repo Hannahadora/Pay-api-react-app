@@ -31,7 +31,7 @@ const FooterComponent = () => {
               <a href="/about">
                 <li className="lg:mb-0 mb-[24px] lg:text-left text-center text-[#ffffff]">About</li>
               </a>
-              <a href="/">
+              <a href="/contact">
                 <li className="lg:mb-0 mb-[24px] lg:text-left text-center text-[#ffffff]">Contact</li>
               </a>
             </ul>
