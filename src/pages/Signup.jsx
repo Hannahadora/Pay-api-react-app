@@ -8,7 +8,7 @@ const Signup = () => {
   return (
     <div className="app-container">
       <div className="w-[60%] mx-auto my-[70px]">
-        <h3 className="text-center font-semibold text-[30px]">Sign In Here</h3>
+        <h3 className="text-center font-medium text-[30px]">Sign In Here</h3>
 
         <div className="mt-[40px]">
           <form className="flex flex-col">
@@ -50,8 +50,7 @@ const Signup = () => {
             <div className="flex items-center">
               <input type="checkbox" id="update" value={contact.update} />
               <label className="ml-3" htmlFor="update">
-                Stay up-to-date with company announcements and updates to our
-                API
+                I agree to terms and policies
               </label>
             </div>
 
