@@ -16,10 +16,10 @@ function NavBar() {
       <div className='app-container py-6'>
         <nav className="app-navbar">
           <ul className="nav-links">
-            <a href='/'><li><img src={AppLogo} /></li></a>
+            <a href='/contact'><li><img src={AppLogo} /></li></a>
             <a href='/pricing'><li className='nav_list-item'>Pricing</li></a>
             <a href='/about'><li className='nav_list-item'>About</li></a>
-            <a href='/'><li className='nav_list-item'>Contact</li></a>
+            <a href='/contact'><li className='nav_list-item'>Contact</li></a>
           </ul>
 
           <div className="navbar-btn">
