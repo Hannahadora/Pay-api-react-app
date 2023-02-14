@@ -249,7 +249,15 @@
 /* Contact page */
 .contact-input {
   background-color: transparent;
-  padding: 4px 12px;
-  border-bottom: 1px solid #36536b;
+  padding: 6px 12px;
+  border-bottom: 1px solid #929596;
+  margin-bottom: 24px;
+}
+
+/* Signup Page */
+.signup-input {
+  background-color: transparent;
+  padding: 6px 12px;
+  border: 1px solid #929596;
   margin-bottom: 24px;
 }
