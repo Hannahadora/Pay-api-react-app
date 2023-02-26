@@ -1,11 +1,22 @@
-import React from "react";
+import React , { useState} from "react";
 import FooterComponent from "./FooterComponent";
+import MobileNavBar from "./MobileNavBar";
 import NavBar from "./NavBar";
 
 const Layout = ({ children }) => {
+  const [mobileNav, setMobileNav] = useState(false);
+
+  const closeMobileNav = () => {
+    setMobileNav(false);
+  };
+  const openMobileNav = () => {
+    setMobileNav(true);
+  };
+
   return (
     <div className="bg-[#edf3f8]">
-      <NavBar />
+      {mobileNav && <MobileNavBar onMobileNavClose={closeMobileNav} />}
+      <NavBar onMobileNavOpen={openMobileNav} />
       {children}
       <FooterComponent />
     </div>
