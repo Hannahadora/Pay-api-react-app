@@ -13,7 +13,6 @@ function NavBar(props) {
     setMobileNav(true);
     props.onMobileNavOpen(mobileNav);
   };
-  
 
   return (
     <div className="">
