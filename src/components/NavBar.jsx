@@ -5,13 +5,11 @@ import CirclePattern from "../assets/shared/desktop/bg-pattern-circle.svg";
 import ButtonComponent from "./ButtonComponent";
 import { useNavigate } from "react-router-dom";
 
-function NavBar(props) {
-  const [mobileNav, setMobileNav] = useState(false);
+function NavBar({onMobileNavOpen, mobileNav}) {
   const navigate = useNavigate()
 
   const openMobileNav = () => {
-    setMobileNav(true);
-    props.onMobileNavOpen(mobileNav);
+    onMobileNavOpen();
   };
 
   return (

@@ -3,13 +3,11 @@ import { useNavigate } from "react-router-dom";
 import close_icon from "../assets/shared/mobile/close.svg";
 import ButtonComponent from "./ButtonComponent";
 
-const MobileNavBar = (props) => {
-  const [mobileNav, setMobileNav] = useState(false);
+const MobileNavBar = ({onMobileNavClose}) => {
   const navigate = useNavigate()
 
   const closeMobileNav = () => {
-    setMobileNav(false);
-    props.onMobileNavClose(mobileNav);
+    onMobileNavClose();
   };
 
   return (

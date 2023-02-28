@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-[#edf3f8]">
       {mobileNav && <MobileNavBar onMobileNavClose={closeMobileNav} />}
-      <NavBar onMobileNavOpen={openMobileNav} />
+      <NavBar onMobileNavOpen={openMobileNav} mobileNav={mobileNav} />
       {children}
       <FooterComponent />
     </div>
