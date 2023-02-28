@@ -12,7 +12,7 @@ const MobileNavBar = (props) => {
     props.onMobileNavClose(mobileNav);
   };
 
-  const goToSignUp = () => {navigate('/signup')}
+  // const goToSignUp = () => {navigate('/signup')}
 
   return (
     <div className="relative bg-[#000] app-container h-[450px]">
@@ -38,7 +38,7 @@ const MobileNavBar = (props) => {
         </ul>
 
         <div className="mt-5">
-          <ButtonComponent title={"Schedule a demo"} pry={"pry-btn"} onClick={goToSignUp} />
+          <ButtonComponent title={"Schedule a demo"} pry={"pry-btn"} onClick={() => navigate('/signup')} />
         </div>
       </nav>
     </div>

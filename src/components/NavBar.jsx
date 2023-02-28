@@ -3,14 +3,18 @@ import AppLogo from "../assets/shared/desktop/logo.svg";
 import menu_icon from "../assets/shared/mobile/menu.svg";
 import CirclePattern from "../assets/shared/desktop/bg-pattern-circle.svg";
 import ButtonComponent from "./ButtonComponent";
+import { useNavigate } from "react-router-dom";
 
 function NavBar(props) {
   const [mobileNav, setMobileNav] = useState(false);
+  const navigate = useNavigate()
 
   const openMobileNav = () => {
     setMobileNav(true);
     props.onMobileNavOpen(mobileNav);
   };
+
+  // const goToSignUp = () => {navigate('/signup')}
 
   return (
     <div className="">
@@ -40,7 +44,7 @@ function NavBar(props) {
           </ul>
 
           <div className="navbar-btn z-[50]">
-            <ButtonComponent title={"Schedule a demo"} pry={"pry-btn"} />
+            <ButtonComponent title={"Schedule a demo"} pry={"pry-btn"} onClick={() => navigate('/signup')} />
           </div>
           {!mobileNav && (
             <img
