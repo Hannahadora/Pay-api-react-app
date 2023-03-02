@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="my-[60px]">
+      <div className="lg:my-[60px] my-[5px]">
         <img src={teamMembersPhoto} alt="teamMembersPhoto" />
       </div>
       <div className="app-container">

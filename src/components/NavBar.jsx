@@ -14,7 +14,7 @@ function NavBar({onMobileNavOpen, mobileNav}) {
 
   return (
     <div className="">
-      <div className="z-[10] absolute right-0 top-0 overflow-hidden w-[700px] h-[700px]">
+      <div className="z-[10] absolute right-0 lg:top-0 top-[-142px] overflow-hidden w-[700px] lg:h-[700px] h-[410px]">
         <div className="absolute right-[-200px] lg:top-[-200px] top-[-375px]">
           <img src={CirclePattern} className="w-full z-[-50]" alt="circle-bg" />
         </div>
@@ -22,7 +22,7 @@ function NavBar({onMobileNavOpen, mobileNav}) {
 
       <div className="app-container py-6">
         <nav className="app-navbar">
-          <ul className="nav-links">
+          <ul className="nav-links z-[20]">
             <a href="/">
               <li>
                 <img src={AppLogo} />
@@ -39,7 +39,7 @@ function NavBar({onMobileNavOpen, mobileNav}) {
             </a>
           </ul>
 
-          <div className="navbar-btn z-[50]">
+          <div className="navbar-btn z-[20]">
             <ButtonComponent title={"Schedule a demo"} pry={"pry-btn"} onClick={() => navigate('/signup')} />
           </div>
           {!mobileNav && (

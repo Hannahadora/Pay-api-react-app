@@ -22,7 +22,10 @@ p {
 }
 
 input:focus {
-  outline: none;
+  outline: none !important;
+}
+textarea:focus {
+  outline: none !important;
 }
 
 .app-container {
@@ -72,12 +75,12 @@ input:focus {
 
 @media screen and (max-width: 1300px) {
   .app-container {
-    padding: 75px 50px;
+    padding: 70px 50px;
   }
 }
 
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
   }
@@ -89,5 +92,7 @@ input:focus {
   p {
     font-size: 14px;
   }
-  
+  .app-container {
+    padding: 50px 24px;
+  }
 }

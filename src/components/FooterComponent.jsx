@@ -18,7 +18,7 @@ const FooterComponent = () => {
 
       <div className="bg-[#1b262f]">
         <div className="app-container">
-          <nav className="app-navbar py-[30px] flex lg:flex-row flex-col items-center lg:justify-between justify-center">
+          <nav className="app-navbar lg:py-[30px] flex lg:flex-row flex-col items-center lg:justify-between justify-center">
             <ul className="nav-links flex lg:flex-row flex-col items-center lg:justify-between justify-center lg:mb-0 mb-[40px]">
               <a href="/">
                 <li className=" lg:mb-0 mb-[40px]">

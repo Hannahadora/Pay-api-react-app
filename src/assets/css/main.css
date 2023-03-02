@@ -129,6 +129,10 @@
   .nav_list-item {
     display: none;
   }
+  .nav-links > a {
+    margin-right: 0px;
+  }
+  
 }
 
 .about-intro-section {

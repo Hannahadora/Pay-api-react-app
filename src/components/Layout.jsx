@@ -1,4 +1,4 @@
-import React , { useState} from "react";
+import React, { useState } from "react";
 import FooterComponent from "./FooterComponent";
 import MobileNavBar from "./MobileNavBar";
 import NavBar from "./NavBar";
@@ -15,7 +15,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className="bg-[#edf3f8]">
-      {mobileNav && <MobileNavBar onMobileNavClose={closeMobileNav} />}
+      {mobileNav && (
+        <div className="absolute top-[0] w-full h-[100vh] left-[0]">
+          <MobileNavBar onMobileNavClose={closeMobileNav} />
+        </div>
+      )}
       <NavBar onMobileNavOpen={openMobileNav} mobileNav={mobileNav} />
       {children}
       <FooterComponent />
