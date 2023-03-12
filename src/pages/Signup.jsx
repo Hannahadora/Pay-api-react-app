@@ -27,7 +27,7 @@ const Signup = () => {
       .required("Required"), 
     agreeToTerms: Yup.boolean()
       .required('Required')
-      .oneOf([true], 'You must accept the terms and conditions.'),,
+      .oneOf([true], 'You must accept the terms and conditions.')
       
   });
 
