@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ButtonComponent from "../components/ButtonComponent";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { upload } from "@testing-library/user-event/dist/upload";
 
 const Signup = () => {
   const contact = {
