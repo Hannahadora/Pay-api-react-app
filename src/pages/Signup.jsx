@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import ButtonComponent from "../components/ButtonComponent";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { upload } from "@testing-library/user-event/dist/upload";
 
 const Signup = () => {
   const contact = {
-    first_name: "yjfyu",
+    first_name: "",
     last_name: "",
     email: "",
     phone_number: "",
@@ -24,17 +25,17 @@ const Signup = () => {
     phone_number: Yup.string().required("Required"),
     password: Yup.string()
       .min(8, "Must be 8 characters or more")
-      .required("Required"), 
+      .required("Required"),
     agreeToTerms: Yup.boolean()
-      .required('Required')
-      .oneOf([true], 'You must accept the terms and conditions.')
-      
+      .required("Required")
+      .oneOf([true], "You must accept the terms and conditions."),
   });
 
-  const handleFormSubmit = (values, { setSubmitting }) => {
+  const handleFormSubmit = (values, { setSubmitting, resetForm }) => {
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
+      alert("Successfully signed up");
       setSubmitting(false);
+      resetForm()
     }, 400);
   };
 
@@ -47,8 +48,8 @@ const Signup = () => {
           <Formik
             initialValues={contact}
             validationSchema={validateContactValues}
-            onSubmit={(values, { setSubmitting }) =>
-              handleFormSubmit(values, { setSubmitting })
+            onSubmit={(values, { setSubmitting, resetForm }) =>
+              handleFormSubmit(values, { setSubmitting, resetForm })
             }
           >
             <Form className="flex flex-col">
@@ -58,7 +59,9 @@ const Signup = () => {
                   name="first_name"
                   placeholder="First name"
                 />
-                <ErrorMessage className="error-msg" name="first_name" />
+                <div className="error-msg">
+                  <ErrorMessage name="first_name" />
+                </div>
               </div>
 
               <div className="mb-[20px]">
@@ -67,7 +70,9 @@ const Signup = () => {
                   name="last_name"
                   placeholder="Last name"
                 />
-                <ErrorMessage className="error-msg" name="last_name" />
+                <div className="error-msg">
+                  <ErrorMessage name="last_name" />
+                </div>
               </div>
 
               <div className="mb-[20px]">
@@ -76,7 +81,9 @@ const Signup = () => {
                   name="email"
                   placeholder="Email"
                 />
-                <ErrorMessage className="error-msg" name="email" />
+                <div className="error-msg">
+                  <ErrorMessage name="email" />
+                </div>
               </div>
 
               <div className="mb-[20px]">
@@ -85,7 +92,9 @@ const Signup = () => {
                   name="phone_number"
                   placeholder="Phone number"
                 />
-                <ErrorMessage className="error-msg" name="phone_number" />
+                <div className="error-msg">
+                  <ErrorMessage name="phone_number" />
+                </div>
               </div>
 
               <div className="mb-[20px]">
@@ -94,7 +103,9 @@ const Signup = () => {
                   name="password"
                   placeholder="Password"
                 />
-                <ErrorMessage className="error-msg" name="password" />
+                <div className="error-msg">
+                  <ErrorMessage name="password" />
+                </div>
               </div>
 
               <div className="flex items-center">
@@ -103,9 +114,12 @@ const Signup = () => {
                   I agree to terms and policies
                 </label>
               </div>
+              <div className="error-msg">
+                <ErrorMessage name="agreeToTerms" />
+              </div>
 
               <div className="mt-10">
-                <ButtonComponent title={"Submit"} tert={"tert-btn"} />
+                <ButtonComponent type={"submit"} title={"Submit"} tert={"tert-btn"} />
               </div>
             </Form>
           </Formik>
