@@ -10,6 +10,7 @@ const Signup = () => {
     email: "",
     phone_number: "",
     password: "",
+    agreeToTerms: false,
   };
 
   const validateContactValues = Yup.object({
@@ -23,7 +24,11 @@ const Signup = () => {
     phone_number: Yup.string().required("Required"),
     password: Yup.string()
       .min(8, "Must be 8 characters or more")
-      .required("Required"),
+      .required("Required"), 
+    agreeToTerms: Yup.boolean()
+      .required('Required')
+      .oneOf([true], 'You must accept the terms and conditions.'),,
+      
   });
 
   const handleFormSubmit = (values, { setSubmitting }) => {
@@ -53,7 +58,7 @@ const Signup = () => {
                   name="first_name"
                   placeholder="First name"
                 />
-                <ErrorMessage name="first_name" />
+                <ErrorMessage className="error-msg" name="first_name" />
               </div>
 
               <div className="mb-[20px]">
@@ -62,7 +67,7 @@ const Signup = () => {
                   name="last_name"
                   placeholder="Last name"
                 />
-                <ErrorMessage className="mb-[20px]" name="last_name" />
+                <ErrorMessage className="error-msg" name="last_name" />
               </div>
 
               <div className="mb-[20px]">
@@ -71,7 +76,7 @@ const Signup = () => {
                   name="email"
                   placeholder="Email"
                 />
-                <ErrorMessage className="mb-[20px]" name="email" />
+                <ErrorMessage className="error-msg" name="email" />
               </div>
 
               <div className="mb-[20px]">
@@ -80,7 +85,7 @@ const Signup = () => {
                   name="phone_number"
                   placeholder="Phone number"
                 />
-                <ErrorMessage className="mb-[20px]" name="phone_number" />
+                <ErrorMessage className="error-msg" name="phone_number" />
               </div>
 
               <div className="mb-[20px]">
@@ -89,12 +94,12 @@ const Signup = () => {
                   name="password"
                   placeholder="Password"
                 />
-                <ErrorMessage name="password" />
+                <ErrorMessage className="error-msg" name="password" />
               </div>
 
               <div className="flex items-center">
-                <Field as="checkbox" id="update" value={contact.update} />
-                <label className="ml-3" htmlFor="update">
+                <Field type="checkbox" name="agreeToTerms" id="agreeToTerms" />
+                <label className="ml-3" htmlFor="agreeToTerms">
                   I agree to terms and policies
                 </label>
               </div>

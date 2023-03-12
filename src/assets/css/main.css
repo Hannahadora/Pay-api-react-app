@@ -266,3 +266,10 @@
   border: 1px solid #929596;
   /* margin-bottom: 20px; */
 }
+
+.error-msg {
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(255, 99, 71);
+  font-weight: 500;
+}
