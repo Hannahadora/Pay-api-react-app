@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AppLogo from "../assets/shared/desktop/logo.svg";
 import menu_icon from "../assets/shared/mobile/menu.svg";
 import CirclePattern from "../assets/shared/desktop/bg-pattern-circle.svg";
@@ -6,7 +6,7 @@ import ButtonComponent from "./ButtonComponent";
 import { useNavigate } from "react-router-dom";
 
 function NavBar({onMobileNavOpen, mobileNav}) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const openMobileNav = () => {
     onMobileNavOpen();
@@ -25,7 +25,7 @@ function NavBar({onMobileNavOpen, mobileNav}) {
           <ul className="nav-links z-[20]">
             <a href="/">
               <li>
-                <img src={AppLogo} />
+                <img src={AppLogo} alt="logo" />
               </li>
             </a>
             <a href="/pricing">

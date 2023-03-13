@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import close_icon from "../assets/shared/mobile/close.svg";
 import ButtonComponent from "./ButtonComponent";
@@ -11,7 +11,7 @@ const MobileNavBar = ({onMobileNavClose}) => {
   };
 
   return (
-    <div className="absolute top-0 bottom-0 left-0 right-0 w-full bg-[#000000c9] h-[screen] z-[50]">
+    <div className="fixed top-0 bottom-0 left-0 right-0 w-full bg-[#000000c9] h-[screen] z-[50]">
     <div className="relative app-container">
       <div className="absolute top-[40px] right-[40px] flex items-center justify-end">
         <img

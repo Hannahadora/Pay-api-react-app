@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import ButtonComponent from "../components/ButtonComponent";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate()
+
   const contact = {
     first_name: "",
     last_name: "",
@@ -35,6 +38,7 @@ const Signup = () => {
       alert("Successfully signed up");
       setSubmitting(false);
       resetForm()
+      navigate('/')
     }, 400);
   };
 
